@@ -1,1 +1,1 @@
-# Django_quiz1
+# Django_quiz
