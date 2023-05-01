@@ -1,9 +1,11 @@
-
-from django.forms import EmailField, ImageField, DateField, DateInput
-from accounts.forms import UserRegisterForm, UserReactivationForm, UserUpdateForm
-from django.test import TestCase
+from accounts.forms import UserReactivationForm, UserRegisterForm, UserUpdateForm
 from accounts.models import User
 from accounts.validators import validate_email_exist
+
+from django.forms import DateField
+from django.forms import DateInput
+from django.forms import EmailField
+from django.test import TestCase
 
 
 class TestForms(TestCase):
