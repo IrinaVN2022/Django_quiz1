@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'accounts.apps.AccountsConfig',
+    'quiz.apps.QuizConfig',
 ]
 if DEBUG:
     INSTALLED_APPS.append('django_extensions')

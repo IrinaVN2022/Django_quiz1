@@ -32,6 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='index'),
     path('accounts/', include('accounts.urls')),
+    path('quiz/', include('quiz.urls')),
     path('accounts/change/', PasswordChangeView.as_view(), name='password_change'),
     path('accounts/change/done/', PasswordChangeDoneView.as_view(), name='password_change_done'),
     path('accounts/reset/', PasswordResetView.as_view(), name='password_reset'),
